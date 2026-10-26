@@ -35,7 +35,6 @@ header h1 {
     padding: 20px;
     background: black;
 }
-
 .card {
     aspect-ratio: 16 / 9;
     padding: 30px;
@@ -43,7 +42,7 @@ header h1 {
 }
 
 .gradient {
-    background: linear-gradient(rgb(92, 92, 240), #ec77ec);
+    background: linear-gradient(rgb(92, 92, 240), #a000a0);
     color: white;
 }
 
