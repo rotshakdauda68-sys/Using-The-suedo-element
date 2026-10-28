@@ -5,75 +5,274 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dd8e60;
 }
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 90px);
+    gap: 15px;
+    padding: 40px;
+    cursor: pointer;
+
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 70px 5%;
+    padding: 40px;
+    font-size: 20px;
+
 }
 
-header h1 {
-    font-size: clamp(40px, 6vw, 85px);
-    line-height: 1;
-    background: linear-gradient(rgb(5, 5, 43), rgb(233, 79, 233));
-    color: transparent;
-    background-clip: text;
+header a {
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
 }
 
-.features p {
-    color: purple;
-    margin: 20px 0;
-    letter-spacing: 2px;
+header a:hover {
+    color: rgb(8, 8, 8);
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 20px;
-    background: black;
-}
-.card {
-    aspect-ratio: 16 / 9;
-    padding: 30px;
-    overflow: hidden;
-}
-
-.gradient {
-    background: linear-gradient(rgb(92, 92, 240), #a000a0);
+.btn {
+    padding: 7px;
+    border: none;
+    border-radius: 25px;
+    background-color: black;
     color: white;
+    font-size: 27px;
+    cursor: pointer;
 }
 
-.white {
-    background: white;
-    color: purple;
+.btn:hover {
+    background-color: black;
+    color: gray;
 }
 
-.card h2 {
-    font-size: clamp(24px, 4vw, 65px);
+.one {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #FAF7F2;
+    grid-column: span 3;
+    grid-row: span 3;
+
 }
 
-.card img {
-    width: 45%;
-    height: 70%;
-    object-fit: cover;
+.one:hover {
+    transition: all 0.4s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
 }
 
-.intro {
+#vis {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    padding: 40px;
 }
 
-.contents p {
-    margin: 15px 0;
+#vis {
+    font-size: 30px;
+    font-family: "Courier New";
+    color: #A8A49F;
 }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+#vis p {
+    font-family: "Courier New";
+    color: #245C49;
 }
 
+#eng {
+    margin-top: 3em;
+    padding: 50px;
+}
+
+#eng h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    line-height: 1.05;
+    color: #111111;
+
+}
+
+#eng span {
+    font-size: 40px;
+    color: #245C49;
+    font-style: italic;
+}
+
+.two {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #FAF7F2;
+    grid-row: span 2;
+}
+
+.two:hover {
+    transition: all 0.4s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.two div {
+    padding: 20px;
+    color: #A8A49F;
+}
+
+.two h3 {
+    margin-top: 2em;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.two p {
+    padding-left: 20px;
+
+}
+
+.three {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #FAF7F2;
+
+}
+
+.three:hover {
+    transition: all 0.4s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.three div {
+    padding: 10px;
+    color: #A8A49F;
+}
+
+.three h3 {
+    margin-top: 10px;
+    padding-left: 10px;
+    color: #111111;
+}
+
+.three p {
+    padding-left: 10px;
+    color: #111111;
+}
+
+.four {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #FAF7F2;
+    grid-column: span 2;
+    grid-row: span 2;
+
+}
+
+.four:hover {
+    transition: all 0.4s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.four p {
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-bottom: 2em;
+    color: #A8A49F;
+    font-size: 30px;
+}
+
+.four::before {
+
+    content: "I am Dev Kriz-Jhay and am a passionate software engineer who love solving soltion, i am currently learning web 3 in Block Fuse Labs Jos Plateau State";
+    display: block;
+    max-width: 400px;
+    line-height: 1.6;
+    padding-left: 40px;
+    font-size: 20px;
+
+}
+
+
+
+.five {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #FAF7F2;
+    grid-column: span 2;
+
+}
+
+.five:hover {
+    transition: all 0.4s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.five div {
+    padding-top: 30px;
+    padding-left: 20px;
+    color: #A8A49F;
+
+}
+
+.five h5 {
+    padding-top: 10px;
+    padding-left: 20px;
+
+}
+
+.six {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #111111;
+
+}
+
+.six:hover {
+    transition: all 0.4s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.six h4 {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.six p {
+    color: white;
+    text-align: center;
+
+}
+
+
+.seven {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #FAF7F2;
+}
+
+.seven:hover {
+    transition: all 0.4s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.seven div {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.seven p {
+    text-align: center;
+    font-size: 20px;
+    color: #111111;
+}
